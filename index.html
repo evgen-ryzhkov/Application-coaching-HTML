@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Application coaching</title>
+    <meta property="og:title" content="Application coaching" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Open Sans;
+        font-size: 1rem;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 160%;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>
+      <link href="./home.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <header data-role="Header" class="home-header Content">
+          <div class="home-container01">
+            <img
+              alt="logo"
+              src="public/external/logo-new-1500h.png"
+              class="home-image"
+            />
+            <div class="home-nav">
+              <nav
+                class="navigation-links-nav Content navigation-links-root-class-name10"
+              >
+                <a href="#about_program" class="navigation-links-link Content">
+                  Program
+                </a>
+                <a href="#reviews" class="navigation-links-link1">
+                  <span>Reviews</span>
+                </a>
+                <a href="#modules" class="navigation-links-link2">
+                  <span>Modules</span>
+                </a>
+                <a href="#school" class="navigation-links-link3">
+                  <span>School</span>
+                </a>
+              </nav>
+            </div>
+            <div class="home-btn-group">
+              <a href="#cta" class="home-register Content button">Contact Us</a>
+            </div>
+            <div data-role="BurgerMenu" class="home-burger-menu">
+              <svg viewBox="0 0 1024 1024" class="home-icon">
+                <path
+                  d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                ></path>
+              </svg>
+            </div>
+            <div data-role="MobileMenu" class="home-mobile-menu">
+              <div class="home-nav1">
+                <div class="home-container02">
+                  <img
+                    alt="image"
+                    src="https://presentation-website-assets.teleporthq.io/logos/logo.png"
+                    class="home-image01"
+                  />
+                  <div data-role="CloseMobileMenu" class="home-menu-close">
+                    <svg viewBox="0 0 1024 1024" class="home-icon02">
+                      <path
+                        d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <nav
+                  class="navigation-links-nav Content navigation-links-root-class-name11"
+                >
+                  <a
+                    href="#about_program"
+                    class="navigation-links-link Content"
+                  >
+                    Program
+                  </a>
+                  <a href="#reviews" class="navigation-links-link1">
+                    <span>Reviews</span>
+                  </a>
+                  <a href="#modules" class="navigation-links-link2">
+                    <span>Modules</span>
+                  </a>
+                  <a href="#school" class="navigation-links-link3">
+                    <span>School</span>
+                  </a>
+                </nav>
+              </div>
+              <div>
+                <svg viewBox="0 0 950.8571428571428 1024" class="home-icon04">
+                  <path
+                    d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                  ></path></svg
+                ><svg viewBox="0 0 877.7142857142857 1024" class="home-icon06">
+                  <path
+                    d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                  ></path></svg
+                ><svg viewBox="0 0 602.2582857142856 1024" class="home-icon08">
+                  <path
+                    d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="home-hero">
+          <div class="home-container03 layout">
+            <h1 class="home-text H1">You Deserve Better</h1>
+            <p class="home-text001">
+              Get a better job by leveraging your education and experience.
+            </p>
+          </div>
+        </div>
+        <div id="about_program" class="home-about wrap">
+          <h2 class="home-text002 H2">Career Accelerator Program</h2>
+          <p class="home-text003 Content">
+            Step-by-step individual assistance for professionals seeking a
+            better start and career growth in Germany.
+          </p>
+          <div class="home-container04">
+            <div class="home-container05">
+              <h2 class="home-text004">
+                <span class="home-text005">Developed by</span>
+                <span class="home-text006">Agil.bz</span>
+                <br />
+                <span>Accredited Educational Center</span>
+              </h2>
+              <span>
+                Quality of our products and services confirmed by ISO9001 and
+                AZAV certificates.
+              </span>
+            </div>
+            <div class="home-container06">
+              <h2 class="home-text010">
+                <span>100% funding</span>
+                <br />
+                <span>from the Job</span>
+                <span>Center</span>
+              </h2>
+              <span class="home-text015">
+                Take advantage of Germany's interest in skilled workers and
+                receive professional assistance for free.
+              </span>
+            </div>
+          </div>
+          <div class="home-container07">
+            <div class="home-container08">
+              <p class="home-text016">
+                <span class="Content home-text017">
+                  Start building a career from the beginning is a challenging
+                  task. Starting a&nbsp;
+                </span>
+                <span class="Content home-text018">
+                  career in a new country is twice harder.
+                </span>
+                <br class="home-text019" />
+              </p>
+              <p class="home-text020">
+                There are so many questions. Where to start? Is my education
+                worth something? Are my professional skills relevant here? What
+                can I expect? Can I even apply for a good job?
+              </p>
+              <p class="home-text021">
+                And there are obstacles as well. Language barriers, bureaucracy,
+                cultural differences.
+              </p>
+              <p class="home-text022">
+                Career Accelerator Program will answer all these questions and
+                provide you with a clear guidance how to deal with the
+                obstacles.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="home-features wrap">
+          <div class="home-feature-card">
+            <img
+              alt="image"
+              src="public/external/trust.svg"
+              class="home-image02"
+            />
+            <h3 class="home-text023">3 language to choose</h3>
+            <p class="home-text024">
+              The program can be provided in English, German or Russian of your
+              choice.
+            </p>
+          </div>
+          <div class="home-feature-card1">
+            <img
+              alt="image"
+              src="public/external/trust.svg"
+              class="home-image03"
+            />
+            <h3 class="home-text025">Adapted to your schedule</h3>
+            <p class="home-text026">
+              Choose a start date and schedule coaching sessions on your
+              preferred days and times.
+            </p>
+          </div>
+          <div class="home-feature-card2">
+            <img
+              alt="image"
+              src="public/external/trust.svg"
+              class="home-image04"
+            />
+            <h3 class="home-text027">Online or in classroom</h3>
+            <p class="home-text028">
+              Enjoy the convenience of online sessions. Or choose face-to-face
+              meetings in our class in Cologne.
+            </p>
+          </div>
+        </div>
+        <div class="home-we-do-care">
+          <div class="home-container09 wrap">
+            <div class="home-container10">
+              <img
+                alt="image"
+                src="public/external/forleo-300w.png"
+                class="home-image05"
+              />
+            </div>
+            <div class="home-container11">
+              <h2 class="home-text029 H2">We Do Care</h2>
+              <span class="home-text030">
+                I know about the new country adaptation challenges from my own
+                experience. I was there 15 years ago, when I began my career
+                journey in German as a 17-year-old girl-immigrant.
+              </span>
+              <span class="home-text031">
+                Having walked this path, my mission is to help new Germans avoid
+                many traps and find a shorter and smoother career path.
+              </span>
+              <h3 class="home-text032">Made by expats for expats</h3>
+              <span class="home-text033">
+                Career Accelerator Program is one of our career building
+                products that is developed specifically for expats and their
+                specific challenges. It's designed as an "all-inclusive" program
+                and includes consulting, coaching, training and information
+                support.
+              </span>
+              <span class="home-text034">
+                Anastasia Herrmann. Founder of Agil.bz
+              </span>
+            </div>
+          </div>
+        </div>
+        <div id="reviews" class="home-testimonial wrap">
+          <h2 class="home-text035 H2">Our Client Career Stories</h2>
+          <div class="home-container12">
+            <header
+              class="testimonial-card3-testimonial-card testimonial-card3-root-class-name"
+            >
+              <svg viewBox="0 0 1024 1024" class="testimonial-card3-icon">
+                <path
+                  d="M800 640c-123.712 0-224-100.29-224-224 0-123.712 100.288-224 224-224s224 100.288 224 224l1 32c0 247.424-200.576 448-448 448v-128c85.474 0 165.834-33.286 226.274-93.726 11.634-11.636 22.252-24.016 31.83-37.020-11.438 1.8-23.16 2.746-35.104 2.746zM224 640c-123.71 0-224-100.29-224-224 0-123.712 100.29-224 224-224s224 100.288 224 224l1 32c0 247.424-200.576 448-448 448v-128c85.474 0 165.834-33.286 226.274-93.726 11.636-11.636 22.254-24.016 31.832-37.020-11.44 1.8-23.16 2.746-35.106 2.746z"
+                ></path>
+              </svg>
+              <div class="testimonial-card3-testimonial">
+                <p class="testimonial-card3-text Content">
+                  <span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                    lorem lorem, malesuada in metus vitae, scelerisque accumsan
+                    ipsum. Nam pellentesque nulla leo, sagittis vehicula sem
+                    commodo nec.
+                  </span>
+                </p>
+                <img
+                  alt="profile"
+                  src="https://images.unsplash.com/photo-1583195764036-6dc248ac07d9?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDE2fHxtYW58ZW58MHx8fHwxNjI2NDUyMDM1&amp;ixlib=rb-1.2.1&amp;h=1200"
+                  class="testimonial-card3-image"
+                />
+                <span class="testimonial-card3-text1">
+                  <span>John Doe</span>
+                </span>
+              </div>
+              <span class="Content">
+                <span>Machine Learning Engineer</span>
+              </span>
+              <span class="testimonial-card3-text3 Content">
+                <span>from Ukraine</span>
+              </span>
+            </header>
+            <header
+              class="testimonial-card3-testimonial-card testimonial-card3-root-class-name"
+            >
+              <svg viewBox="0 0 1024 1024" class="testimonial-card3-icon">
+                <path
+                  d="M800 640c-123.712 0-224-100.29-224-224 0-123.712 100.288-224 224-224s224 100.288 224 224l1 32c0 247.424-200.576 448-448 448v-128c85.474 0 165.834-33.286 226.274-93.726 11.634-11.636 22.252-24.016 31.83-37.020-11.438 1.8-23.16 2.746-35.104 2.746zM224 640c-123.71 0-224-100.29-224-224 0-123.712 100.29-224 224-224s224 100.288 224 224l1 32c0 247.424-200.576 448-448 448v-128c85.474 0 165.834-33.286 226.274-93.726 11.636-11.636 22.254-24.016 31.832-37.020-11.44 1.8-23.16 2.746-35.106 2.746z"
+                ></path>
+              </svg>
+              <div class="testimonial-card3-testimonial">
+                <p class="testimonial-card3-text Content">
+                  <span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                    lorem lorem, malesuada in metus vitae, scelerisque accumsan
+                    ipsum. Nam pellentesque nulla leo, sagittis vehicula sem
+                    commodo nec.
+                  </span>
+                </p>
+                <img
+                  alt="profile"
+                  src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIzfHxtYW58ZW58MHx8fHwxNjI2NDUyMDM1&amp;ixlib=rb-1.2.1&amp;h=1200"
+                  class="testimonial-card3-image"
+                />
+                <span class="testimonial-card3-text1">
+                  <span>John Doe</span>
+                </span>
+              </div>
+              <span class="Content"><span>Product Manager</span></span>
+              <span class="testimonial-card3-text3 Content">
+                <span>from USA</span>
+              </span>
+            </header>
+            <header
+              class="testimonial-card3-testimonial-card testimonial-card3-root-class-name"
+            >
+              <svg viewBox="0 0 1024 1024" class="testimonial-card3-icon">
+                <path
+                  d="M800 640c-123.712 0-224-100.29-224-224 0-123.712 100.288-224 224-224s224 100.288 224 224l1 32c0 247.424-200.576 448-448 448v-128c85.474 0 165.834-33.286 226.274-93.726 11.634-11.636 22.252-24.016 31.83-37.020-11.438 1.8-23.16 2.746-35.104 2.746zM224 640c-123.71 0-224-100.29-224-224 0-123.712 100.29-224 224-224s224 100.288 224 224l1 32c0 247.424-200.576 448-448 448v-128c85.474 0 165.834-33.286 226.274-93.726 11.636-11.636 22.254-24.016 31.832-37.020-11.44 1.8-23.16 2.746-35.106 2.746z"
+                ></path>
+              </svg>
+              <div class="testimonial-card3-testimonial">
+                <p class="testimonial-card3-text Content">
+                  <span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                    lorem lorem, malesuada in metus vitae, scelerisque accumsan
+                    ipsum. Nam pellentesque nulla leo, sagittis vehicula sem
+                    commodo nec.
+                  </span>
+                </p>
+                <img
+                  alt="profile"
+                  src="https://images.unsplash.com/photo-1546456073-ea246a7bd25f?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDh8fGJsYWNrJTIwbWFufGVufDB8fHx8MTYyNjQ1MjAwOA&amp;ixlib=rb-1.2.1&amp;h=1200"
+                  class="testimonial-card3-image"
+                />
+                <span class="testimonial-card3-text1">
+                  <span>John Doe</span>
+                </span>
+              </div>
+              <span class="Content"><span>Accountant</span></span>
+              <span class="testimonial-card3-text3 Content">
+                <span>from Poland</span>
+              </span>
+            </header>
+          </div>
+          <div class="home-container13">
+            <img
+              alt="image"
+              src="public/external/arrow-left.svg"
+              class="home-image06"
+            />
+            <img
+              alt="image"
+              src="public/arrow-right.svg"
+              class="home-image07"
+            />
+          </div>
+        </div>
+        <section id="modules" class="home-modules">
+          <div class="home-container14 wrap">
+            <h2 class="home-text036 H2">Career Accelerator Modules</h2>
+            <div class="home-container15">
+              <div class="home-container16">
+                <div class="home-container17">
+                  <h3 class="home-text037">
+                    <span class="home-text038">What are my cards?</span>
+                    <br />
+                  </h3>
+                  <p class="home-text040">
+                    <span>
+                      Analyzing previous work experience and individual
+                      circumstances.
+                    </span>
+                    <br />
+                  </p>
+                  <span class="home-text043 Content">1</span>
+                </div>
+                <div class="home-container18">
+                  <h3 class="home-text044">
+                    Decoding the German Labor Market.
+                  </h3>
+                  <p class="home-text045">
+                    Understanding your rights and benefits as an employee,
+                    current market trends, German employers and cultural nuances
+                    at work.
+                  </p>
+                  <span class="home-text046 Content">2</span>
+                </div>
+                <div class="home-container19">
+                  <h3 class="home-text047">Good and Bad Jobs.</h3>
+                  <p class="home-text048">
+                    What are they and how to distinguish them.
+                  </p>
+                  <span class="home-text049">3</span>
+                </div>
+                <div class="home-container20">
+                  <h3 class="home-text050">Desires, Goals and Reality.</h3>
+                  <p class="home-text051">
+                    Identification of personal goals. Matching them with
+                    existing opportunities.
+                  </p>
+                  <span class="home-text052">4</span>
+                </div>
+                <div class="home-container21">
+                  <h3 class="home-text053">The Plan.</h3>
+                  <p class="home-text054">
+                    Developing a personal career plan and job application
+                    strategy.
+                  </p>
+                  <span class="home-text055">5</span>
+                </div>
+                <div class="home-container22">
+                  <h3 class="home-text056">Play by the Rules.</h3>
+                  <p class="home-text057">
+                    Preparation of CV, a cover letter and recommendations
+                    according to German standards and expectations.
+                  </p>
+                  <span class="home-text058">6</span>
+                </div>
+                <div class="home-container23">
+                  <h3 class="home-text059">Don't get lost in the crowd.</h3>
+                  <p class="home-text060">
+                    <span>CV optimization for better self-presentation.</span>
+                    <br />
+                    <span></span>
+                  </p>
+                  <span class="home-text064">7</span>
+                </div>
+                <div class="home-container24">
+                  <h3 class="home-text065">
+                    Overcoming Communication Barriers.
+                  </h3>
+                  <p class="home-text066">
+                    Identify barriers to interviewing and communication at work.
+                    Development an effective plan to address them. Preparing for
+                    an interview.
+                  </p>
+                  <span class="home-text067">8</span>
+                </div>
+                <div class="home-container25">
+                  <h3 class="home-text068">The First Contact.</h3>
+                  <p class="home-text069">
+                    Assistance in finding the first vacancies and applying for
+                    them.
+                  </p>
+                  <span class="home-text070">9</span>
+                </div>
+              </div>
+              <div class="home-container26">
+                <div class="home-container27">
+                  <p class="home-text071">
+                    <span class="home-text072">Duration:</span>
+                    <br />
+                    <span></span>
+                  </p>
+                  <span class="home-text075">2 months</span>
+                </div>
+                <div class="home-container28">
+                  <p class="home-text076">
+                    <span class="home-text077">Number of session:</span>
+                    <br />
+                    <span></span>
+                  </p>
+                  <span class="home-text080">40</span>
+                </div>
+                <div>
+                  <p class="home-text081">
+                    <span class="home-text082">Average session length:</span>
+                    <br />
+                    <span></span>
+                  </p>
+                  <span class="home-text085">45 minutes</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="school" class="home-trust">
+          <div class="home-container30 wrap">
+            <h2 class="home-text086 H2">Agil.biz — Trust Based on Facts</h2>
+            <div class="home-container31">
+              <p class="home-text087">
+                The ISO 9001 and AZAV quality certificates confirm that we take
+                the development of our educational products seriously, and the
+                results of our students - that we provide practical value.
+              </p>
+              <p class="home-text088">
+                Our goal is to help start, switch, accelerate or advance our
+                student careers.
+              </p>
+              <p class="home-text089">
+                We strongly believe that knowledge and quality education are the
+                keys for better future. So, we're in constant improvement and
+                development process to provide first-class educational products
+                to our students.
+              </p>
+            </div>
+            <div class="home-container32">
+              <div class="home-container33">
+                <span class="home-text090">500+</span>
+                <span>students since 2014</span>
+                <div class="home-container34"></div>
+              </div>
+              <div class="home-container35">
+                <span class="home-text092">5.0</span>
+                <span>rating based on 57 reviews</span>
+                <div class="home-container36"></div>
+              </div>
+              <div class="home-container37">
+                <span class="home-text094">70%</span>
+                <span>find a new job after 2 months</span>
+                <div class="home-container38"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="home-outcomes wrap">
+          <h2 class="home-text096 H2">The Outcomes</h2>
+          <p class="home-text097">
+            What you will get out of Career Accelerator Program
+          </p>
+          <div class="home-container39">
+            <div class="home-container40">
+              <ul class="home-ul list">
+                <li class="home-li list-item">
+                  <p>Understanding how the German labor market works.</p>
+                  <div class="home-container41"></div>
+                </li>
+                <li class="home-li01 list-item">
+                  <p>Clear plan for getting a well paying job.</p>
+                  <div class="home-container42"></div>
+                </li>
+                <li class="home-li02 list-item">
+                  <p>Properly prepared documents for job search in Germany.</p>
+                  <div class="home-container43"></div>
+                </li>
+              </ul>
+            </div>
+            <div class="home-container44">
+              <ul class="home-ul1 list">
+                <li class="home-li03 list-item">
+                  <p>
+                    Skills for effective self-presentation for the German
+                    employers.
+                  </p>
+                  <div class="home-container45"></div>
+                </li>
+                <li class="home-li04 list-item">
+                  <p>
+                    Assistance in finding and applying for the first vacancies.
+                  </p>
+                  <div class="home-container46"></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <p class="home-text103">and most importantly...</p>
+        </div>
+        <div class="home-confidence">
+          <div class="home-container47 wrap">
+            <h2 class="home-text104 H2">confidence</h2>
+            <div class="home-container48">
+              <div class="home-container49">
+                <svg viewBox="0 0 1024 1024" class="home-icon10">
+                  <path
+                    d="M800 640c-123.712 0-224-100.29-224-224 0-123.712 100.288-224 224-224s224 100.288 224 224l1 32c0 247.424-200.576 448-448 448v-128c85.474 0 165.834-33.286 226.274-93.726 11.634-11.636 22.252-24.016 31.83-37.020-11.438 1.8-23.16 2.746-35.104 2.746zM224 640c-123.71 0-224-100.29-224-224 0-123.712 100.29-224 224-224s224 100.288 224 224l1 32c0 247.424-200.576 448-448 448v-128c85.474 0 165.834-33.286 226.274-93.726 11.636-11.636 22.254-24.016 31.832-37.020-11.44 1.8-23.16 2.746-35.106 2.746z"
+                  ></path>
+                </svg>
+                <p class="home-text105">
+                  <span>
+                    When you understand how Germany works, everything becomes
+                    logical and predictable.
+                  </span>
+                  <br />
+                </p>
+                <p class="home-text108">
+                  As a result, fear and insecurity will be replaced by
+                  confidence and active actions.
+                </p>
+              </div>
+              <div class="home-container50">
+                <img
+                  alt="image"
+                  src="public/external/confident-woman-300w.png"
+                  class="home-image08"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="cta" class="home-cta">
+          <div class="home-container51 wrap">
+            <h2 class="home-text109 H2">
+              Ready to accelerate your career path?
+            </h2>
+            <button type="button" class="home-button button">
+              Yes, I'm in!
+            </button>
+            <h3 class="home-text110 H2">Have any questions?</h3>
+            <button type="button" class="home-button1 button">
+              Book a free consultation
+            </button>
+          </div>
+        </div>
+        <div class="wrap home-faq">
+          <h2 class="home-text111 H2">Frequently Asked Questions</h2>
+          <ul class="home-ul2 list">
+            <li class="home-li05">
+              <h3 class="home-text112">
+                How can I participate in the program for free?
+              </h3>
+              <img
+                alt="image"
+                src="public/external/plus.svg"
+                class="open-icon close-icon"
+              />
+              <p class="home-text113">
+                With an activation and placement voucher (AVGS for short), the
+                application coaching is free of charge for you . Either the
+                employment agency or the job center will bear the costs.
+              </p>
+            </li>
+            <li class="home-li06">
+              <h3 class="home-text114">What's an AVGS voucher?</h3>
+              <img
+                alt="image"
+                src="public/external/plus.svg"
+                class="open-icon"
+              />
+              <p class="hidden-text">
+                With an activation and placement voucher (AVGS for short), the
+                application coaching is free of charge for you . Either the
+                employment agency or the job center will bear the costs.
+              </p>
+            </li>
+            <li class="home-li07">
+              <h3 class="home-text116">How can I get an AVGS voucher?</h3>
+              <img
+                alt="image"
+                src="public/external/plus.svg"
+                class="open-icon"
+              />
+              <p class="hidden-text">
+                With an activation and placement voucher (AVGS for short), the
+                application coaching is free of charge for you . Either the
+                employment agency or the job center will bear the costs.
+              </p>
+            </li>
+            <li class="home-li08">
+              <h3 class="home-text118">What if my German is below B1?</h3>
+              <img
+                alt="image"
+                src="public/external/plus.svg"
+                class="open-icon"
+              />
+              <p class="hidden-text">
+                With an activation and placement voucher (AVGS for short), the
+                application coaching is free of charge for you . Either the
+                employment agency or the job center will bear the costs.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <footer class="home-footer">
+          <div class="home-container52 wrap">
+            <div class="home-container53">
+              <img
+                alt="logo"
+                src="public/external/logo-new-1500h.png"
+                class="home-image13"
+              />
+              <span class="home-text120">
+                <span>© 2023 - agil.bz</span>
+                <br />
+                <span>Agile Education Center GmbH &amp; Co. KG</span>
+              </span>
+              <div class="home-icon-group1">
+                <a
+                  href="https://www.instagram.com/uassist.de/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <svg viewBox="0 0 877.7142857142857 1024" class="home-icon12">
+                    <path
+                      d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                    ></path>
+                  </svg>
+                </a>
+                <a
+                  href="https://www.tiktok.com/@uassist_de"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <img
+                    alt="image"
+                    src="public/external/tiktok.svg"
+                    class="home-image14"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="home-links-container">
+              <div class="home-container54">
+                <div class="home-container55">
+                  <h3 class="home-text124">Agil.bz</h3>
+                  <ul class="list">
+                    <li class="home-li09 list-item">
+                      <a
+                        href="https://agil-bz.com/ueber-uns/"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="home-link2"
+                      >
+                        About
+                      </a>
+                    </li>
+                    <li class="home-li10 list-item">
+                      <a
+                        href="https://agil-bz.com/kursuebersicht/"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="home-link3"
+                      >
+                        Courses
+                      </a>
+                    </li>
+                    <li class="list-item">
+                      <a
+                        href="https://agil-bz.com/coachings/"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="home-link4"
+                      >
+                        Coaching
+                      </a>
+                    </li>
+                    <li class="list-item"></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="home-container56">
+                <div class="home-container57">
+                  <h3 class="home-text125">Support</h3>
+                  <ul class="list">
+                    <li class="home-li13 list-item">
+                      <a
+                        href="https://agil-bz.com/agb/"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="home-link5"
+                      >
+                        Terms and Conditions
+                      </a>
+                    </li>
+                    <li class="list-item">
+                      <a
+                        href="https://agil-bz.com/datenschutz/"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="home-link6"
+                      >
+                        Data protection
+                      </a>
+                    </li>
+                    <li class="list-item"></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <div class="home-cta-form">
+          <div class="home-popup-wrap">
+            <button type="button" class="home-button2 close-icon">+</button>
+            <div id="form-wrap" class="home-form-wrap">
+              <h2 class="home-text126 H2">
+                Your Career Acceleration Starts Here and Now
+              </h2>
+              <div class="progress-bar">
+                <div class="progress-bar__step-active progress-bar__step">
+                  <span>1</span>
+                  <span class="progress-bar__title">Contact details</span>
+                </div>
+                <div class="progress-bar__spacer"></div>
+                <div class="progress-bar__step">
+                  <span>2</span>
+                  <span class="progress-bar__title">Qualification</span>
+                </div>
+                <div class="progress-bar__spacer"></div>
+                <div class="progress-bar__step">
+                  <span>3</span>
+                  <span class="progress-bar__title">Schedule a callback</span>
+                </div>
+              </div>
+              <form class="home-form">
+                <div>
+                  <input
+                    type="text"
+                    required=""
+                    placeholder="First Name"
+                    class="input"
+                  />
+                  <input
+                    type="text"
+                    required=""
+                    placeholder="Last Name"
+                    class="input"
+                  />
+                  <input
+                    type="text"
+                    required=""
+                    placeholder="Email"
+                    class="input"
+                  />
+                  <input
+                    type="text"
+                    required=""
+                    placeholder="Phone"
+                    class="input"
+                  />
+                  <input
+                    type="text"
+                    required=""
+                    placeholder="Location"
+                    class="input"
+                  />
+                  <button type="button" class="home-button3 button">
+                    <span>
+                      <span>Continue</span>
+                      <br />
+                    </span>
+                  </button>
+                </div>
+                <div class="home-step-2">
+                  <select class="input">
+                    <option value="Option 1">Educational level</option>
+                    <option value="Option 2">Option 2</option>
+                    <option value="Option 3">Option 3</option>
+                  </select>
+                  <select class="input">
+                    <option value="Option 1" selected="">
+                      Official work experience in Germany
+                    </option>
+                  </select>
+                  <select class="input">
+                    <option value="Option 1" selected="">
+                      Proficiency in German
+                    </option>
+                  </select>
+                  <select class="input">
+                    <option value="Option 1" selected="">AVGS voucher</option>
+                  </select>
+                  <div class="home-container63">
+                    <button type="button" class="home-button4 button">
+                      <span>
+                        <span>Back</span>
+                        <br />
+                      </span>
+                    </button>
+                    <button type="button" class="home-button5 button">
+                      <span>
+                        <span>Continue</span>
+                        <br />
+                      </span>
+                    </button>
+                  </div>
+                </div>
+                <div class="home-step-3">
+                  <select class="input">
+                    <option value="Option 1" selected="">
+                      Preferred language for the call
+                    </option>
+                  </select>
+                  <select class="input">
+                    <option value="Option 1" selected="">
+                      Preferred time for the call
+                    </option>
+                    <option value="Option 1">Option 1</option>
+                    <option value="Option 2">Option 2</option>
+                    <option value="Option 3">Option 3</option>
+                  </select>
+                  <div class="home-container64">
+                    <button type="button" class="home-button6 button">
+                      <span>
+                        <span>Back</span>
+                        <br />
+                      </span>
+                    </button>
+                    <button type="button" class="home-button7 button">
+                      <span>
+                        <span>Send a request</span>
+                        <br />
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div id="form-success" class="home-form-wrap1">
+              <div class="home-container65"></div>
+              <h2 class="home-text148">
+                You've just taken the first step towards a better career.
+              </h2>
+              <p class="home-text149">
+                We look forward to meeting you and getting started on
+                accelerating your professional journey.
+              </p>
+              <p class="home-text150">
+                Our manager will call you back to confirm your application and
+                schedule the program.
+              </p>
+              <p class="home-text151">
+                Thank you for your interest in our Career Accelerator program.
+              </p>
+              <button type="button" class="home-button8 button">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      data-section-id="header"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
+</html>
