@@ -6,6 +6,7 @@
   flex-direction: column;
 }
 .testimonial-card3-icon {
+  fill: var(--dl-color-primary-vibrantteal);
   color: var(--dl-color-primary-vibrantteal);
   width: var(--dl-size-size-small);
   margin-bottom: var(--dl-space-space-twounits);
@@ -38,9 +39,6 @@
 }
 
 @media(max-width: 1280px) {
-  .testimonial-card3-icon {
-    fill: var(--dl-color-primary-vibrantteal);
-  }
   .testimonial-card3-root-class-name {
     width: auto;
     max-width: 400px;
