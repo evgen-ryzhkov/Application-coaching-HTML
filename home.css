@@ -283,7 +283,7 @@
   padding: var(--dl-space-space-fourunits);
   background-size: initial;
   background-color: var(--dl-color-primary-deepblue);
-  background-image: ad9e1afb-a330-4ca4-9b5c-e4e4b56bc1fc;
+  background-image: url("public/external/classroom.jpg");
   background-position: bottom;
 }
 .home-text004 {
@@ -357,7 +357,7 @@
   padding-top: 100px;
   background-size: initial;
   background-color: var(--dl-color-primary-deepblue);
-  background-image: d9839878-1f99-4eaf-bb8e-ad2e6a915e9b;
+  background-image: url("public/external/texture-1.jpg");
   background-repeat: no-repeat;
   background-blend-mode: darken;
 }
@@ -387,7 +387,7 @@
   padding-top: 100px;
   background-size: inherit;
   background-color: var(--dl-color-primary-deepblue);
-  background-image: d9839878-1f99-4eaf-bb8e-ad2e6a915e9b;
+  background-image: url("public/external/texture-1.jpg");
   background-position: right;
   background-blend-mode: darken;
 }
@@ -417,7 +417,7 @@
   padding-top: 100px;
   background-size: initial;
   background-color: var(--dl-color-primary-deepblue);
-  background-image: d9839878-1f99-4eaf-bb8e-ad2e6a915e9b;
+  background-image: url("public/external/texture-1.jpg");
   background-position: center;
   background-blend-mode: darken;
 }
