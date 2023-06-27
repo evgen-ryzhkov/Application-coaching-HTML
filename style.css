@@ -158,6 +158,19 @@
   font-weight: bold !important;
   background-color: var(--dl-color-primary-vibrantteal);
 }
+.module-title {
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: var(--dl-space-space-halfunit);
+}
+.module-number {
+  top: 0;
+  left: 0;
+  color: var(--dl-color-gray-text);
+  position: absolute;
+  font-size: 30px;
+  font-weight: 400;
+}
 .H2 {
   font-size: 36px;
   font-family: Montserrat;
