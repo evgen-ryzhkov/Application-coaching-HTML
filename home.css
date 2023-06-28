@@ -1671,3 +1671,30 @@
     height: 100%;
   }
 }
+/* css code fixes */
+.home-feature-card,
+.home-feature-card1,
+.home-feature-card2 {
+  background-image: url("public/external/texture-1.jpg");
+}
+.home-container05 {
+  background-image: url("public/external/classroom.jpg");
+}
+.home-trust {
+  background-image: url("public/external/students-2.jpg");
+}
+.home-cta {
+  background-image: url("public/external/speeding.jpg");
+}
+.button {
+  width: 100%;
+}
+.home-cta .button {
+  height: 45px;
+}
+@media(max-width: 390px) {
+  .wrap {
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+  }
+}
