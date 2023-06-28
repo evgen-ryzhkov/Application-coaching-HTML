@@ -31,8 +31,37 @@
 .home-form-wrap1 {
   margin-left: auto;
   margin-right: auto;
+  height: 45px;
 }
-
+.home-container65 {
+  background-image: url("public/external/success.svg");
+}
+.hidden {
+  display: none;
+}
+.home-form {
+  text-align: center;
+}
+.home-form .input {
+  line-height: 19px;
+}
+.input:focus {
+  outline-color: var(--dl-color-primary-vibrantteal);
+}
+.home-form .button {
+  margin-left: auto;
+  margin-right: auto;
+  height: 45px;
+}
+.invalid {
+    border-color: var(--dl-color-danger-500);
+}
+.prev-button {
+  max-width: 100px;
+}
+.next-button {
+  max-width: 200px;
+}
 @media(max-width: 390px) {
   .wrap {
     padding-left: var(--dl-space-space-unit);

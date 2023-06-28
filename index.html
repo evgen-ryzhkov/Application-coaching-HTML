@@ -47,6 +47,8 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
     <script src="./main.js"></script>
 
   </head>
@@ -884,80 +886,62 @@
                   <span class="progress-bar__title">Schedule a callback</span>
                 </div>
               </div>
+
               <form class="home-form">
-                <div>
-                  <input
-                    type="text"
-                    required=""
-                    placeholder="First Name"
-                    class="input"
-                  />
-                  <input
-                    type="text"
-                    required=""
-                    placeholder="Last Name"
-                    class="input"
-                  />
-                  <input
-                    type="text"
-                    required=""
-                    placeholder="Email"
-                    class="input"
-                  />
-                  <input
-                    type="text"
-                    required=""
-                    placeholder="Phone"
-                    class="input"
-                  />
-                  <input
-                    type="text"
-                    required=""
-                    placeholder="Location"
-                    class="input"
-                  />
-                  <button type="button" class="home-button3 button">
+
+                <div class="form-step">
+                  <input type="text" required="" placeholder="First Name" class="input" />
+                  <input type="text" required="" placeholder="Last Name" class="input" />
+                  <input type="email" required="" placeholder="Email" class="input" />
+                  <input type="text" required="" placeholder="Phone" class="input" id="customerPhone" />
+                  <input type="text" required="" placeholder="Location" class="input" />
+                  <button type="button" class="home-button3 button next-button">
                     <span>
                       <span>Continue</span>
-                      <br />
                     </span>
                   </button>
                 </div>
-                <div class="home-step-2">
-                  <select class="input">
-                    <option value="Option 1">Educational level</option>
-                    <option value="Option 2">Option 2</option>
-                    <option value="Option 3">Option 3</option>
+
+                <div class="form-step hidden">
+                  <select class="input" required>
+                    <option value="" selected>Educational level</option>
+                    <option value="Higher education">Higher education</option>
+                    <option value="Secondary technical/vocational education">Secondary technical/vocational education</option>
+                    <option value="No professional education">No professional education</option>
                   </select>
-                  <select class="input">
-                    <option value="Option 1" selected="">
-                      Official work experience in Germany
-                    </option>
+                  <select class="input" required>
+                    <option value="" selected>Official work experience in Germany</option>
+                    <option value="Yes, I have.">Yes, I have.</option>
+                    <option value="No, I don't have.">No, I don't have.</option>
                   </select>
-                  <select class="input">
-                    <option value="Option 1" selected="">
-                      Proficiency in German
-                    </option>
+                  <select class="input" required>
+                    <option value="" selected>Proficiency in German</option>
+                    <option value="I have a German B1 certificate.">I have a German B1 certificate.</option>
+                    <option value="I have a German B2 or higher certificate.">I have a German B2 or higher certificate.</option>
+                    <option value="I will pass my B1 exam in a few weeks.">I will pass my B1 exam in a few weeks.</option>
+                    <option value="I don't have a German B1 certificate.">I don't have a German B1 certificate.</option>
                   </select>
-                  <select class="input">
-                    <option value="Option 1" selected="">AVGS voucher</option>
+                  <select class="input" required>
+                    <option value="" selected>AVGS voucher</option>
+                    <option value="I already have.">I already have.</option>
+                    <option value="I don't have it. Give me free help to get it.">I don't have it. Give me free help to get it.</option>
+                    <option value="I don't have it. I can get it myself.">I don't have it. I can get it myself.</option>
                   </select>
                   <div class="home-container63">
-                    <button type="button" class="home-button4 button">
+                    <button type="button" class="home-button4 button prev-button">
                       <span>
                         <span>Back</span>
-                        <br />
                       </span>
                     </button>
-                    <button type="button" class="home-button5 button">
+                    <button type="button" class="home-button5 button next-button">
                       <span>
                         <span>Continue</span>
-                        <br />
                       </span>
                     </button>
                   </div>
                 </div>
-                <div class="home-step-3">
+
+                <div class="form-step hidden">
                   <select class="input">
                     <option value="Option 1" selected="">
                       Preferred language for the call
@@ -988,7 +972,7 @@
                 </div>
               </form>
             </div>
-            <div id="form-success" class="home-form-wrap1">
+            <div id="form-success" class="home-form-wrap1 hidden">
               <div class="home-container65"></div>
               <h2 class="home-text148">
                 You've just taken the first step towards a better career.

@@ -1130,9 +1130,6 @@
   position: absolute;
   font-size: 36px;
 }
-.home-form-wrap {
-  display: none;
-}
 .home-text126 {
   font-size: 20px;
   text-align: center;
@@ -1148,9 +1145,6 @@
   margin-top: var(--dl-space-space-twounits);
   margin-left: auto;
   margin-right: auto;
-}
-.home-step-2 {
-  display: none;
 }
 .home-container63 {
   display: flex;
@@ -1175,9 +1169,6 @@
   margin-top: var(--dl-space-space-twounits);
   margin-left: auto;
   margin-right: auto;
-}
-.home-step-3 {
-  display: none;
 }
 .home-container64 {
   display: flex;
