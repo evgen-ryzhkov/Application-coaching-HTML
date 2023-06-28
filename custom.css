@@ -19,6 +19,16 @@
 .home-cta .button {
   height: 45px;
 }
+.slick-slide {
+  text-align: center;
+}
+.home-ul2 p {
+  margin-top: var(--dl-space-space-twounits);
+}
+.home-ul2 h3 {
+  cursor: pointer;
+}
+
 @media(max-width: 390px) {
   .wrap {
     padding-left: var(--dl-space-space-unit);
