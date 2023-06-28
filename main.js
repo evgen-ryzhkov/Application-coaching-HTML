@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+    /* Review slider ------------------- */
     $('.slider').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -15,20 +17,30 @@ $(document).ready(function(){
         ]
     });
 
+    /* FAQ ------------------------------ */
     $(".open-icon, .home-ul2 h3").on("click", function() {
         var parent = $(this).parent('li');
         var textElem = parent.find('p');
         var iconElem = parent.find('.open-icon');
 
         if(iconElem.hasClass('close-icon')) {
-            // If section is open, close it
             iconElem.removeClass('close-icon');
             textElem.addClass('hidden-text');
         } else {
-            // If section is closed, open it
             iconElem.addClass('close-icon');
             textElem.removeClass('hidden-text');
         }
     });
 
+    /* CTA --------------------------- */
+    $(".home-cta .button").on("click", function() {
+        var ctaId = $(this).data('cta-id');
+        $('#' + ctaId).fadeIn();
+
+    });
+
+     $(".home-cta-form .close-icon, #form-success .button").on("click", function() {
+        $(this).closest('.home-cta-form').fadeOut();
+
+    });
 });
