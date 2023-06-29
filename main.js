@@ -69,18 +69,61 @@ $(document).ready(function(){
           }
         });
 
-
-
         if (!isValid) {
           return;
         }
 
         // Hide current step, show next step
         $step.hide().next('.form-step').show();
+
+        // Find the next progress bar step and make it active
+        let currentProgressBarStep = $('.progress-bar__step-active').last(),
+            $nextProgressBarStep = currentProgressBarStep.nextAll('.progress-bar__step:first'),
+            $nextProgressBarSpacer = currentProgressBarStep.next('.progress-bar__spacer');
+
+        $nextProgressBarStep.addClass('progress-bar__step-active');
+        $nextProgressBarSpacer.addClass('progress-bar__spacer-active');
+
   });
 
   $('.prev-button').on('click', function(e) {
     $(this).closest('.form-step').hide().prev('.form-step').show();
+
+    // Find the current progress bar step and remove active class from it
+    let $currentProgressBarStep = $('.progress-bar__step-active').last(),
+        $prevProgressBarSpacer = $currentProgressBarStep.prev('.progress-bar__spacer');
+
+    $currentProgressBarStep.removeClass('progress-bar__step-active');
+    $prevProgressBarSpacer.removeClass('progress-bar__spacer-active');
+
   });
+
+  $('#datetimepicker').datetimepicker({
+    format:'d.m.Y H:i'
+  });
+
+  $('form.home-form').on('submit', function(e) {
+      e.preventDefault();
+
+      var url = $(this).attr('action'),
+          errorMessage = $(this).attr('data-error-message'),
+          formData = $(this).serialize();
+
+      $.ajax({
+        type: 'POST',
+        url: url,
+        data: formData,
+        success: function(response) {
+          $('#form-wrap').addClass('hidden');
+          $('#form-success').removeClass('hidden');
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+          // Code to run if the request fails; see details below.
+          console.log('Form submission failed: ' + textStatus, errorThrown);
+          alert(errorMessage);
+        }
+  });
+});
+
 
 });

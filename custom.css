@@ -59,8 +59,11 @@
 .prev-button {
   max-width: 100px;
 }
-.next-button {
+.next-button, button[type="submit"] {
   max-width: 200px;
+}
+.progress-bar__spacer-active {
+  background-color: var(--dl-color-primary-vibrantteal);
 }
 @media(max-width: 390px) {
   .wrap {

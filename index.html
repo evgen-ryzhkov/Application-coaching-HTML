@@ -49,6 +49,9 @@
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.min.css" />
+
     <script src="./main.js"></script>
 
   </head>
@@ -870,6 +873,7 @@
               <h2 class="home-text126 H2">
                 Your Career Acceleration Starts Here and Now
               </h2>
+
               <div class="progress-bar">
                 <div class="progress-bar__step-active progress-bar__step">
                   <span>1</span>
@@ -887,7 +891,7 @@
                 </div>
               </div>
 
-              <form class="home-form">
+              <form class="home-form" action="api/url" data-error-message="There was an error with your submission. Please try again later.">
 
                 <div class="form-step">
                   <input type="text" required="" placeholder="First Name" class="input" />
@@ -942,36 +946,32 @@
                 </div>
 
                 <div class="form-step hidden">
-                  <select class="input">
-                    <option value="Option 1" selected="">
-                      Preferred language for the call
-                    </option>
+                  <select class="input" required>
+                    <option value="" selected>Preferred language for the call</option>
+                    <option value="German">German</option>
+                    <option value="English">English</option>
+                    <option value="Russian">Russian</option>
                   </select>
-                  <select class="input">
-                    <option value="Option 1" selected="">
-                      Preferred time for the call
-                    </option>
-                    <option value="Option 1">Option 1</option>
-                    <option value="Option 2">Option 2</option>
-                    <option value="Option 3">Option 3</option>
-                  </select>
+                  <input type="text" required placeholder="Preferred time for the call" class="input" id="datetimepicker" />
+
                   <div class="home-container64">
-                    <button type="button" class="home-button6 button">
+                    <button type="button" class="home-button6 button prev-button">
                       <span>
                         <span>Back</span>
-                        <br />
                       </span>
                     </button>
-                    <button type="button" class="home-button7 button">
+                    <button type="submit" class="home-button7 button">
                       <span>
                         <span>Send a request</span>
-                        <br />
                       </span>
                     </button>
                   </div>
+
                 </div>
+
               </form>
             </div>
+
             <div id="form-success" class="home-form-wrap1 hidden">
               <div class="home-container65"></div>
               <h2 class="home-text148">
