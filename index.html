@@ -869,7 +869,7 @@
         <div class="home-cta-form" id="cta-1">
           <div class="home-popup-wrap">
             <button type="button" class="home-button2 close-icon">+</button>
-            <div id="form-wrap" class="home-form-wrap">
+            <div class="home-form-wrap">
               <h2 class="home-text126 H2">
                 Your Career Acceleration Starts Here and Now
               </h2>
@@ -897,7 +897,7 @@
                   <input type="text" required="" placeholder="First Name" class="input" />
                   <input type="text" required="" placeholder="Last Name" class="input" />
                   <input type="email" required="" placeholder="Email" class="input" />
-                  <input type="text" required="" placeholder="Phone" class="input" id="customerPhone" />
+                  <input type="text" required="" placeholder="Phone" class="input customerPhone" />
                   <input type="text" required="" placeholder="Location" class="input" />
                   <button type="button" class="home-button3 button next-button">
                     <span>
@@ -952,7 +952,7 @@
                     <option value="English">English</option>
                     <option value="Russian">Russian</option>
                   </select>
-                  <input type="text" required placeholder="Preferred time for the call" class="input" id="datetimepicker" />
+                  <input type="text" required placeholder="Preferred time for the call" class="input datetimepicker" />
 
                   <div class="home-container64">
                     <button type="button" class="home-button6 button prev-button">
@@ -972,7 +972,7 @@
               </form>
             </div>
 
-            <div id="form-success" class="home-form-wrap1 hidden">
+            <div class="home-form-wrap1 form-success hidden">
               <div class="home-container65"></div>
               <h2 class="home-text148">
                 You've just taken the first step towards a better career.
@@ -992,6 +992,85 @@
             </div>
           </div>
         </div>
+
+        <div class="home-cta-form" id="cta-2">
+          <div class="home-popup-wrap">
+            <button type="button" class="home-button2 close-icon">+</button>
+            <div class="home-form-wrap">
+              <h2 class="home-text126 H2">
+                Free consultation order
+              </h2>
+              <p class="home-cta-form__p">Book a free phone consultation to learn more about the Career Accelerator Program and the opportunities it offers.</p>
+
+              <div class="progress-bar">
+                <div class="progress-bar__step-active progress-bar__step">
+                  <span>1</span>
+                  <span class="progress-bar__title">Contact details</span>
+                </div>
+                <div class="progress-bar__spacer"></div>
+                <div class="progress-bar__step">
+                  <span>2</span>
+                  <span class="progress-bar__title">Schedule a callback</span>
+                </div>
+              </div>
+
+              <form class="home-form" action="api/url" data-error-message="There was an error with your submission. Please try again later.">
+
+                <div class="form-step">
+                  <input type="text" required="" placeholder="First Name" class="input" />
+                  <input type="text" required="" placeholder="Last Name" class="input" />
+                  <input type="text" required="" placeholder="Phone" class="input customerPhone" />
+                  <input type="text" required="" placeholder="Location" class="input" />
+                  <button type="button" class="home-button3 button next-button">
+                    <span>
+                      <span>Continue</span>
+                    </span>
+                  </button>
+                </div>
+
+                <div class="form-step hidden">
+                  <select class="input" required>
+                    <option value="" selected>Preferred language for the call</option>
+                    <option value="German">German</option>
+                    <option value="English">English</option>
+                    <option value="Russian">Russian</option>
+                  </select>
+                  <input type="text" required placeholder="Preferred time for the call" class="input datetimepicker"  />
+
+                  <div class="home-container64">
+                    <button type="button" class="home-button6 button prev-button">
+                      <span>
+                        <span>Back</span>
+                      </span>
+                    </button>
+                    <button type="submit" class="home-button7 button">
+                      <span>
+                        <span>Call me back</span>
+                      </span>
+                    </button>
+                  </div>
+
+                </div>
+
+              </form>
+            </div>
+
+            <div class="home-form-wrap1 form-success hidden">
+              <div class="home-container65"></div>
+              <h2 class="home-text148">
+                Callback order sent successfully
+              </h2>
+              <p class="home-text150">
+                Our manager will call you back at the specified time.
+              </p>
+              <p class="home-text151">
+                Thank you for your interest in our Career Accelerator program.
+              </p>
+              <button type="button" class="home-button8 button">Close</button>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
     <script

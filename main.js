@@ -39,17 +39,17 @@ $(document).ready(function(){
 
     });
 
-     $(".home-cta-form .close-icon, #form-success .button").on("click", function() {
+     $(".home-cta-form .close-icon, .form-success .button").on("click", function() {
         $(this).closest('.home-cta-form').fadeOut();
     });
 
-     $('#customerPhone').on('focus', function(){
+     $('.customerPhone').on('focus', function(){
         if (!this.value) {
           this.value = '+49 ';
         }
       });
 
-      $('#customerPhone').mask('+00 0000 0000000', {
+      $('.customerPhone').mask('+00 0000 0000000', {
         translation: {
           '0': { pattern: /[0-9*]/ }
         }
@@ -66,6 +66,12 @@ $(document).ready(function(){
             isValid = false;
           } else {
             $(this).removeClass('invalid');
+
+            // Additional check for phone number field
+            if ($(this).hasClass('customerPhone') && $(this).val().length < 9) {
+                $(this).addClass('invalid');
+                isValid = false;
+            }
           }
         });
 
@@ -77,7 +83,7 @@ $(document).ready(function(){
         $step.hide().next('.form-step').show();
 
         // Find the next progress bar step and make it active
-        let currentProgressBarStep = $('.progress-bar__step-active').last(),
+        let currentProgressBarStep = $(this).parents('.home-form-wrap').find('.progress-bar__step-active').last(),
             $nextProgressBarStep = currentProgressBarStep.nextAll('.progress-bar__step:first'),
             $nextProgressBarSpacer = currentProgressBarStep.next('.progress-bar__spacer');
 
@@ -90,7 +96,7 @@ $(document).ready(function(){
     $(this).closest('.form-step').hide().prev('.form-step').show();
 
     // Find the current progress bar step and remove active class from it
-    let $currentProgressBarStep = $('.progress-bar__step-active').last(),
+    let $currentProgressBarStep =  $(this).parents('.home-form-wrap').find('.progress-bar__step-active').last(),
         $prevProgressBarSpacer = $currentProgressBarStep.prev('.progress-bar__spacer');
 
     $currentProgressBarStep.removeClass('progress-bar__step-active');
@@ -98,7 +104,7 @@ $(document).ready(function(){
 
   });
 
-  $('#datetimepicker').datetimepicker({
+  $('.datetimepicker').datetimepicker({
     format:'d.m.Y H:i'
   });
 
@@ -107,23 +113,25 @@ $(document).ready(function(){
 
       var url = $(this).attr('action'),
           errorMessage = $(this).attr('data-error-message'),
-          formData = $(this).serialize();
+          formData = $(this).serialize(),
+          form = $(this);
 
       $.ajax({
         type: 'POST',
         url: url,
         data: formData,
         success: function(response) {
-          $('#form-wrap').addClass('hidden');
-          $('#form-success').removeClass('hidden');
+            let homeFormWrap = form.parent('.home-form-wrap');
+            homeFormWrap.addClass('hidden');
+            homeFormWrap.next('.form-success').removeClass('hidden');
         },
         error: function(jqXHR, textStatus, errorThrown) {
           // Code to run if the request fails; see details below.
           console.log('Form submission failed: ' + textStatus, errorThrown);
           alert(errorMessage);
         }
-  });
-});
+      });
 
+  });
 
 });
