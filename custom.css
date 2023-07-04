@@ -1,8 +1,12 @@
 /* css code fixes */
-.home-feature-card,
-.home-feature-card1,
-.home-feature-card2 {
+.home-feature-card {
   background-image: url("public/external/texture-1.jpg");
+}
+.home-feature-card:nth-child(2) {
+  background-position: right;
+}
+.home-feature-card:nth-child(3) {
+  background-position: center;
 }
 .home-container05 {
   background-image: url("public/external/classroom.jpg");
@@ -131,6 +135,75 @@
   margin-left: 15px;
   font-size: 14px;
   color: var(--dl-color-gray-900);
+}
+.home-feature-card h3 {
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: var(--dl-space-space-twounits);
+}
+.home-feature-card p {
+  color: var(--dl-color-gray-white);
+  font-size: 14px;
+}
+.we-do-care__content p {
+  margin-bottom: var(--dl-space-space-twounits);
+  color: var(--dl-color-gray-text);
+  font-weight: 500;
+}
+.we-do-care__content h3 {
+  font-weight: 600;
+  margin-bottom: var(--dl-space-space-unit);
+  font-size: 18px;
+}
+.testimonial-card3-text {
+  height: 130px;
+  overflow: hidden;
+}
+.home-outcomes ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: var(--dl-space-space-fourunits);
+  padding-bottom: var(--dl-space-space-fourunits);
+}
+.home-outcomes li {
+  box-sizing: border-box;
+  width: 50%;
+  margin-bottom: 18px;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: relative;
+}
+.home-outcomes li:after {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: var(--dl-color-primary-gold);
+  position: absolute;
+  top: 6px;
+  left: 0;
+}
+.instructor-card {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media(max-width: 991px) {
+  .home-outcomes ul {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    text-align: left;
+  }
+  .home-outcomes li {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+@media(max-width: 767px) {
+  .home-outcomes ul {
+    width: 100%;
+  }
 }
 @media(max-width: 390px) {
   .wrap {

@@ -8,6 +8,13 @@ $(document).ready(function(){
         nextArrow: $('.slider-next'),
         responsive: [
             {
+                breakpoint: 991, /* breakpoint at 600px for tablets */
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
                 breakpoint: 600, /* breakpoint at 600px for mobile devices */
                 settings: {
                     slidesToShow: 1,
